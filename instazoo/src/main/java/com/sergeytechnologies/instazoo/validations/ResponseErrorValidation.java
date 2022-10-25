@@ -18,7 +18,7 @@ public class ResponseErrorValidation {
         if (result.hasErrors()) {
             Map<String, String> errorMap = new HashMap<>();
 
-            if (CollectionUtils.isEmpty(result.getAllErrors())) {
+            if (!CollectionUtils.isEmpty(result.getAllErrors())) {
                 for (ObjectError error : result.getAllErrors()) {
                     errorMap.put(error.getCode(), error.getDefaultMessage());
                 }
