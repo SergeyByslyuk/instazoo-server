@@ -1,4 +1,4 @@
-package com.sergeytechnologies.instazoo.validations;
+package com.sergeytechnologies.instazoo.service.validations;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

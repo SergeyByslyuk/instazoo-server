@@ -7,7 +7,7 @@ import com.sergeytechnologies.instazoo.payload.response.MessageResponse;
 import com.sergeytechnologies.instazoo.security.JWTTokenProvider;
 import com.sergeytechnologies.instazoo.security.SecurityConstants;
 import com.sergeytechnologies.instazoo.service.UserService;
-import com.sergeytechnologies.instazoo.validations.ResponseErrorValidation;
+import com.sergeytechnologies.instazoo.service.validations.ResponseErrorValidation;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.authentication.AuthenticationManager;

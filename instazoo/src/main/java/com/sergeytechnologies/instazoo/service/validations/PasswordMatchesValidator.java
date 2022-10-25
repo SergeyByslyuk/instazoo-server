@@ -1,4 +1,4 @@
-package com.sergeytechnologies.instazoo.validations;
+package com.sergeytechnologies.instazoo.service.validations;
 
 import com.sergeytechnologies.instazoo.annotations.PasswordMatches;
 import com.sergeytechnologies.instazoo.payload.request.SignupRequest;

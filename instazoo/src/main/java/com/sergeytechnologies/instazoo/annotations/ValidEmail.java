@@ -1,6 +1,6 @@
 package com.sergeytechnologies.instazoo.annotations;
 
-import com.sergeytechnologies.instazoo.validations.EmailValidator;
+import com.sergeytechnologies.instazoo.service.validations.EmailValidator;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;

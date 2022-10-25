@@ -54,7 +54,7 @@ public class ImageUploadService {
         return imageRepo.save(imageModel);
     }
 
-    private ImageModel uploadImageToPost(MultipartFile file, Principal principal, Long postId) throws IOException {
+    public ImageModel uploadImageToPost(MultipartFile file, Principal principal, Long postId) throws IOException {
 
         User user = getUserByPrincipal(principal);
         Post post = user.getPosts()

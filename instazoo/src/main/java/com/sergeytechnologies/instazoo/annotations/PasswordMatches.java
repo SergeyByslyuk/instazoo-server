@@ -1,7 +1,7 @@
 package com.sergeytechnologies.instazoo.annotations;
 
 
-import com.sergeytechnologies.instazoo.validations.PasswordMatchesValidator;
+import com.sergeytechnologies.instazoo.service.validations.PasswordMatchesValidator;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;
