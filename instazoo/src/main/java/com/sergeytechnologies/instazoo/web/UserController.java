@@ -15,6 +15,7 @@ import javax.validation.Valid;
 import java.security.Principal;
 
 @RestController
+@CrossOrigin
 @RequestMapping("/api/user")
 public class UserController {
 
@@ -53,7 +54,7 @@ public class UserController {
         User user = userService.updateUser(userDTO, principal);
 
         UserDTO userUpdated = userFacade.userToUserDT0(user);
-        return new ResponseEntity<>(userDTO, HttpStatus.OK);
+        return new ResponseEntity<>(userUpdated, HttpStatus.OK);
 
     }
 }

@@ -29,12 +29,12 @@ public class ImageUploadController {
         return new ResponseEntity<>(new MessageResponse("Image Uploaded Successfully"), HttpStatus.OK);
     }
 
-    @PostMapping("/postId/upload")
+    @PostMapping("/{postId}/upload")
     public ResponseEntity<MessageResponse> uploadImageToPost(@PathVariable("postId") String postId,
                                                              @RequestParam("file") MultipartFile file,
                                                              Principal principal) throws IOException {
         imageUploadService.uploadImageToPost(file, principal, Long.parseLong(postId));
-        return new ResponseEntity<>(new MessageResponse("Image Uploadede Succesfully"), HttpStatus.OK);
+        return new ResponseEntity<>(new MessageResponse("Image Uploaded Successfully"), HttpStatus.OK);
     }
 
     @GetMapping("/profileImage")

@@ -18,6 +18,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
+@CrossOrigin
 @RequestMapping("/api/comment")
 public class CommentController {
 
@@ -44,7 +45,7 @@ public class CommentController {
         return new ResponseEntity<>(createdComment, HttpStatus.OK);
     }
 
-    @GetMapping("/{postId/all}")
+    @GetMapping("/{postId}/all")
     public ResponseEntity<List<CommentDTO>> getAllCommentToPost(@PathVariable("postId") String postId) {
         List<CommentDTO> commentDTOList = commentService.getAllCommentsForPost(Long.parseLong(postId))
                 .stream()
